@@ -1,0 +1,141 @@
+@prefix dc1: <http://purl.org/dc/terms/> .
+@prefix ex: <http://example.org/> .
+@prefix foaf: <http://xmlns.com/foaf/0.1/> .
+@prefix hosp: <http://hospital.org/ontology/> .
+@prefix owl: <http://www.w3.org/2002/07/owl#> .
+@prefix rdfs: <http://www.w3.org/2000/01/rdf-schema#> .
+@prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
+
+ex:hasName a owl:DatatypeProperty ;
+    rdfs:domain ex:Person ;
+    rdfs:range rdfs:Literal .
+
+<http://example.org/resource/CPE_Dataset> a ex:Dataset ;
+    hosp:dataQualityNote "All data from microbiologist were checked by quality manager" ;
+    hosp:dataType "Number of CPE positive data" ;
+    hosp:healthDomain "Infection Prevention and Control" ;
+    dc1:accessRights "Restricted" ;
+    dc1:description "Number of CPE positive and ICD-10 code" ;
+    dc1:format "CSV" ;
+    dc1:hasVersion "1" ;
+    dc1:identifier "Not applicable" ;
+    dc1:language "en" ;
+    dc1:license "Hospital-specific" ;
+    dc1:provenance "Microbiologist, HIPE ICD-10 Coders" ;
+    dc1:publisher "Sajjad Karimian" ;
+    dc1:relation "Not applicable" ;
+    dc1:spatial "Dublin, Ireland" ;
+    dc1:temporal "Last 5 years" ;
+    dc1:title "Carbapenemase-Producing Enterobacterales" ;
+    foaf:maker "Sajjad Karimian" .
+
+hosp:dataQualityNote a owl:DatatypeProperty ;
+    rdfs:label "Data Quality Notes" ;
+    rdfs:comment "Data quality notes" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+hosp:dataType a owl:DatatypeProperty ;
+    rdfs:label "Data Type" ;
+    rdfs:comment "Type of data" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+hosp:healthDomain a owl:DatatypeProperty ;
+    rdfs:label "Health Domain" ;
+    rdfs:comment "Health domain" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:accessRights a owl:DatatypeProperty ;
+    rdfs:label "Access Rights" ;
+    rdfs:comment "Access level" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:description a owl:DatatypeProperty ;
+    rdfs:label "Description" ;
+    rdfs:comment "Description of the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:format a owl:DatatypeProperty ;
+    rdfs:label "Data Format" ;
+    rdfs:comment "File format" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:hasVersion a owl:DatatypeProperty ;
+    rdfs:label "Version" ;
+    rdfs:comment "Version of the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:identifier a owl:DatatypeProperty ;
+    rdfs:label "Identifier" ;
+    rdfs:comment "Identifier for the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:language a owl:DatatypeProperty ;
+    rdfs:label "Language" ;
+    rdfs:comment "Language of the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:license a owl:DatatypeProperty ;
+    rdfs:label "License" ;
+    rdfs:comment "License info" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:provenance a owl:DatatypeProperty ;
+    rdfs:label "Provenance / Origin" ;
+    rdfs:comment "Origin of the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:publisher a owl:DatatypeProperty ;
+    rdfs:label "Publisher" ;
+    rdfs:comment "Publisher of the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:relation a owl:DatatypeProperty ;
+    rdfs:label "Related Resources" ;
+    rdfs:comment "Related resources" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:spatial a owl:DatatypeProperty ;
+    rdfs:label "Geographic Coverage" ;
+    rdfs:comment "Geographic coverage" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:temporal a owl:DatatypeProperty ;
+    rdfs:label "Temporal Coverage" ;
+    rdfs:comment "Temporal coverage" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+dc1:title a owl:DatatypeProperty ;
+    rdfs:label "Title" ;
+    rdfs:comment "Title of the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+foaf:maker a owl:DatatypeProperty ;
+    rdfs:label "Contact Point" ;
+    rdfs:comment "Contact for the dataset" ;
+    rdfs:domain ex:Dataset ;
+    rdfs:range xsd:string .
+
+ex:Person a owl:Class ;
+    rdfs:label "Person" ;
+    rdfs:comment "A person involved with the data." .
+
+ex:Dataset a owl:Class ;
+    rdfs:label "Dataset" ;
+    rdfs:comment "A dataset related to healthcare or IPC." .
+
