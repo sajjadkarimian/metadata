@@ -4,7 +4,7 @@
 @prefix xsd: <http://www.w3.org/2001/XMLSchema#> .
 @prefix healthdcat: <http://hlth.linkeddata.es/def/healthdcat#> .
 
-<https://example.org/dataset/cpe>
+<https://sajjadkarimian.github.io/cpe-data/metadata.ttl>
     a dcat:Dataset , healthdcat:HealthDataset ;
     dct:title "Carbapenemase-Producing Enterobacterales" ;
     dct:description "Number of CPE positive and ICD-10 codes" ;
@@ -28,4 +28,4 @@
     healthdcat:dataSensitivityLevel healthdcat:Restricted ;
     healthdcat:dataProvenance "Microbiologist, HIPE ICD-10 Coders" ;
     healthdcat:healthClassificationSystem <http://id.who.int/icd/release/10> ;
-    healthdcat:qualityAssessmentNote "All data from microbiologist were checked by quality manager" 
+    healthdcat:qualityAssessmentNote "All data from microbiologist were checked by quality manager" .
