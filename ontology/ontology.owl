@@ -1,0 +1,315 @@
+<?xml version="1.0"?>
+<rdf:RDF xmlns="http://www.w3.org/2002/07/owl#"
+     xml:base="http://www.w3.org/2002/07/owl"
+     xmlns:owl="http://www.w3.org/2002/07/owl#"
+     xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#"
+     xmlns:xml="http://www.w3.org/XML/1998/namespace"
+     xmlns:xsd="http://www.w3.org/2001/XMLSchema#"
+     xmlns:foaf="http://xmlns.com/foaf/0.1/"
+     xmlns:rdfs="http://www.w3.org/2000/01/rdf-schema#"
+     xmlns:terms="http://purl.org/dc/terms/"
+     xmlns:ontology="http://hospital.org/ontology/">
+    <Ontology/>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Data properties
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/hasName -->
+
+
+    <DatatypeProperty rdf:about="http://example.org/hasName">
+        <rdfs:domain rdf:resource="http://example.org/Person"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2000/01/rdf-schema#Literal"/>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://hospital.org/ontology/dataQualityNote -->
+
+
+    <DatatypeProperty rdf:about="http://hospital.org/ontology/dataQualityNote">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Data quality notes</rdfs:comment>
+        <rdfs:label>Data Quality Notes</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://hospital.org/ontology/dataType -->
+
+
+    <DatatypeProperty rdf:about="http://hospital.org/ontology/dataType">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Type of data</rdfs:comment>
+        <rdfs:label>Data Type</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://hospital.org/ontology/healthDomain -->
+
+
+    <DatatypeProperty rdf:about="http://hospital.org/ontology/healthDomain">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Health domain</rdfs:comment>
+        <rdfs:label>Health Domain</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/accessRights -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/accessRights">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Access level</rdfs:comment>
+        <rdfs:label>Access Rights</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/description -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/description">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Description of the dataset</rdfs:comment>
+        <rdfs:label>Description</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/format -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/format">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>File format</rdfs:comment>
+        <rdfs:label>Data Format</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/hasVersion -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/hasVersion">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Version of the dataset</rdfs:comment>
+        <rdfs:label>Version</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/identifier -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/identifier">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Identifier for the dataset</rdfs:comment>
+        <rdfs:label>Identifier</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/language -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/language">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Language of the dataset</rdfs:comment>
+        <rdfs:label>Language</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/license -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/license">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>License info</rdfs:comment>
+        <rdfs:label>License</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/provenance -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/provenance">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Origin of the dataset</rdfs:comment>
+        <rdfs:label>Provenance / Origin</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/publisher -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/publisher">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Publisher of the dataset</rdfs:comment>
+        <rdfs:label>Publisher</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/relation -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/relation">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Related resources</rdfs:comment>
+        <rdfs:label>Related Resources</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/spatial -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/spatial">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Geographic coverage</rdfs:comment>
+        <rdfs:label>Geographic Coverage</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/temporal -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/temporal">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Temporal coverage</rdfs:comment>
+        <rdfs:label>Temporal Coverage</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://purl.org/dc/terms/title -->
+
+
+    <DatatypeProperty rdf:about="http://purl.org/dc/terms/title">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Title of the dataset</rdfs:comment>
+        <rdfs:label>Title</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- http://xmlns.com/foaf/0.1/maker -->
+
+
+    <DatatypeProperty rdf:about="http://xmlns.com/foaf/0.1/maker">
+        <rdfs:domain rdf:resource="http://example.org/Dataset"/>
+        <rdfs:range rdf:resource="http://www.w3.org/2001/XMLSchema#string"/>
+        <rdfs:comment>Contact for the dataset</rdfs:comment>
+        <rdfs:label>Contact Point</rdfs:label>
+    </DatatypeProperty>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Classes
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/Dataset -->
+
+
+    <Class rdf:about="http://example.org/Dataset">
+        <rdfs:comment>A dataset related to healthcare or IPC.</rdfs:comment>
+        <rdfs:label>Dataset</rdfs:label>
+    </Class>
+    
+
+
+    <!-- http://example.org/Person -->
+
+
+    <Class rdf:about="http://example.org/Person">
+        <rdfs:comment>A person involved with the data.</rdfs:comment>
+        <rdfs:label>Person</rdfs:label>
+    </Class>
+    
+
+
+    <!-- 
+    ///////////////////////////////////////////////////////////////////////////////////////
+    //
+    // Individuals
+    //
+    ///////////////////////////////////////////////////////////////////////////////////////
+     -->
+
+
+    
+
+
+    <!-- http://example.org/resource/CPE_Dataset -->
+
+
+    <NamedIndividual rdf:about="http://example.org/resource/CPE_Dataset">
+        <rdf:type rdf:resource="http://example.org/Dataset"/>
+        <ontology:dataQualityNote>All data from microbiologist were checked by quality manager</ontology:dataQualityNote>
+        <ontology:dataType>Number of CPE positive data</ontology:dataType>
+        <ontology:healthDomain>Infection Prevention and Control</ontology:healthDomain>
+        <terms:accessRights>Restricted</terms:accessRights>
+        <terms:description>Number of CPE positive and ICD-10 code</terms:description>
+        <terms:format>CSV</terms:format>
+        <terms:hasVersion>1</terms:hasVersion>
+        <terms:identifier>Not applicable</terms:identifier>
+        <terms:language>en</terms:language>
+        <terms:license>Hospital-specific</terms:license>
+        <terms:provenance>Microbiologist, HIPE ICD-10 Coders</terms:provenance>
+        <terms:publisher>Sajjad Karimian</terms:publisher>
+        <terms:relation>Not applicable</terms:relation>
+        <terms:spatial>Dublin, Ireland</terms:spatial>
+        <terms:temporal>Last 5 years</terms:temporal>
+        <terms:title>Carbapenemase-Producing Enterobacterales</terms:title>
+        <foaf:maker>Sajjad Karimian</foaf:maker>
+    </NamedIndividual>
+</rdf:RDF>
+
+
+
+<!-- Generated by the OWL API (version 5.1.18) https://github.com/owlcs/owlapi/ -->
+
+
